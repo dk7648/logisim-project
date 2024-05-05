@@ -30,8 +30,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#4to1Multiplexer.circ" name="7"/>
-  <main name="main"/>
+  <main name="4to1Multiplexer"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -64,76 +63,85 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="main">
-    <a name="circuit" val="main"/>
+  <circuit name="4to1Multiplexer">
+    <a name="circuit" val="4to1Multiplexer"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(380,150)" to="(440,150)"/>
-    <wire from="(310,140)" to="(310,210)"/>
-    <wire from="(230,170)" to="(230,180)"/>
-    <wire from="(230,140)" to="(230,150)"/>
-    <wire from="(130,160)" to="(250,160)"/>
-    <wire from="(220,270)" to="(340,270)"/>
-    <wire from="(440,140)" to="(440,150)"/>
-    <wire from="(130,120)" to="(240,120)"/>
-    <wire from="(300,130)" to="(300,150)"/>
-    <wire from="(380,130)" to="(380,150)"/>
-    <wire from="(240,120)" to="(240,140)"/>
-    <wire from="(260,180)" to="(260,210)"/>
-    <wire from="(220,210)" to="(260,210)"/>
-    <wire from="(130,180)" to="(230,180)"/>
-    <wire from="(130,140)" to="(230,140)"/>
-    <wire from="(330,150)" to="(330,250)"/>
-    <wire from="(170,250)" to="(330,250)"/>
-    <wire from="(350,130)" to="(380,130)"/>
-    <wire from="(300,130)" to="(320,130)"/>
-    <wire from="(280,150)" to="(300,150)"/>
-    <wire from="(230,150)" to="(250,150)"/>
-    <wire from="(230,170)" to="(250,170)"/>
-    <wire from="(310,140)" to="(320,140)"/>
-    <wire from="(240,140)" to="(250,140)"/>
-    <wire from="(340,150)" to="(340,270)"/>
-    <comp lib="0" loc="(130,160)" name="Pin">
+    <wire from="(230,240)" to="(230,310)"/>
+    <wire from="(260,250)" to="(260,260)"/>
+    <wire from="(310,220)" to="(310,230)"/>
+    <wire from="(260,180)" to="(260,200)"/>
+    <wire from="(250,130)" to="(250,150)"/>
+    <wire from="(250,170)" to="(250,190)"/>
+    <wire from="(260,320)" to="(260,350)"/>
+    <wire from="(210,130)" to="(250,130)"/>
+    <wire from="(210,190)" to="(250,190)"/>
+    <wire from="(220,220)" to="(220,250)"/>
+    <wire from="(360,210)" to="(400,210)"/>
+    <wire from="(220,220)" to="(250,220)"/>
+    <wire from="(260,200)" to="(290,200)"/>
+    <wire from="(260,260)" to="(290,260)"/>
+    <wire from="(280,160)" to="(310,160)"/>
+    <wire from="(280,230)" to="(310,230)"/>
+    <wire from="(290,320)" to="(320,320)"/>
+    <wire from="(310,220)" to="(330,220)"/>
+    <wire from="(310,200)" to="(330,200)"/>
+    <wire from="(320,270)" to="(340,270)"/>
+    <wire from="(310,160)" to="(310,200)"/>
+    <wire from="(340,230)" to="(340,270)"/>
+    <wire from="(230,240)" to="(250,240)"/>
+    <wire from="(210,310)" to="(230,310)"/>
+    <wire from="(260,320)" to="(270,320)"/>
+    <wire from="(210,250)" to="(220,250)"/>
+    <wire from="(290,260)" to="(290,310)"/>
+    <wire from="(320,270)" to="(320,320)"/>
+    <wire from="(290,200)" to="(290,260)"/>
+    <comp lib="0" loc="(210,190)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
+      <a name="label" val="1"/>
     </comp>
-    <comp lib="0" loc="(170,250)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="clock"/>
+    <comp lib="2" loc="(360,210)" name="Multiplexer">
+      <a name="width" val="8"/>
+      <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(130,180)" name="Pin">
+    <comp lib="0" loc="(270,320)" name="Splitter">
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="0" loc="(210,310)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
+      <a name="label" val="nused"/>
     </comp>
-    <comp lib="0" loc="(220,210)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="jump"/>
-    </comp>
-    <comp lib="0" loc="(130,140)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(440,140)" name="Pin">
+    <comp lib="0" loc="(400,210)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="7" loc="(280,150)" name="4to1Multiplexer"/>
-    <comp lib="0" loc="(130,120)" name="Pin">
+    <comp lib="0" loc="(210,130)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
+      <a name="label" val="0"/>
     </comp>
-    <comp lib="0" loc="(310,220)" name="Pin">
+    <comp lib="0" loc="(210,250)" name="Pin">
+      <a name="width" val="8"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="enable"/>
+      <a name="label" val="2"/>
     </comp>
-    <comp lib="4" loc="(350,130)" name="Register"/>
-    <comp lib="0" loc="(220,270)" name="Pin">
+    <comp lib="2" loc="(280,230)" name="Multiplexer">
+      <a name="width" val="8"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(260,350)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="reset"/>
+    </comp>
+    <comp lib="2" loc="(280,160)" name="Multiplexer">
+      <a name="width" val="8"/>
+      <a name="enable" val="false"/>
     </comp>
   </circuit>
 </project>
