@@ -30,7 +30,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <main name="main"/>
+  <main name="bumpIncoder32"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -63,8 +63,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="main">
-    <a name="circuit" val="main"/>
+  <circuit name="bumpIncoder32">
+    <a name="circuit" val="bumpIncoder32"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
@@ -396,37 +396,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(770,360)" to="(780,360)"/>
     <wire from="(530,360)" to="(540,360)"/>
     <wire from="(910,380)" to="(910,430)"/>
-    <comp lib="0" loc="(1180,100)" name="Pin">
+    <comp lib="0" loc="(830,190)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display19"/>
+      <a name="label" val="display12"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(530,190)" name="Pin">
+    <comp lib="0" loc="(980,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display6"/>
+      <a name="label" val="display15"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1830,190)" name="Pin">
+    <comp lib="0" loc="(1680,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display32"/>
+      <a name="label" val="display29"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(1770,360)" name="Register">
+    <comp lib="4" loc="(520,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(870,360)" name="Register">
+    <comp lib="0" loc="(1130,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
       <a name="width" val="32"/>
+      <a name="label" val="display18"/>
+      <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(1270,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="4" loc="(370,360)" name="Register">
+    <comp lib="4" loc="(1570,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1920,390)" name="Pin">
@@ -435,51 +436,35 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="start output"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(330,190)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display2"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(1370,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1030,190)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display16"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1530,190)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display26"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1920,430)" name="Pin">
+    <comp lib="0" loc="(1920,280)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="reset output"/>
+      <a name="width" val="32"/>
+      <a name="label" val="final data"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(930,190)" name="Pin">
+    <comp lib="0" loc="(780,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display14"/>
+      <a name="label" val="display11"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(1820,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(980,100)" name="Pin">
+    <comp lib="0" loc="(1330,190)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display15"/>
+      <a name="label" val="display22"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(920,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(680,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display9"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(580,100)" name="Pin">
@@ -489,86 +474,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="display7"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(770,360)" name="Register">
+    <comp lib="4" loc="(1170,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(280,100)" name="Pin">
+    <comp lib="0" loc="(880,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display1"/>
+      <a name="label" val="display13"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(920,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1680,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display29"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(1420,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="4" loc="(1720,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(730,190)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display10"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1380,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display23"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(1070,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="4" loc="(820,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1280,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display21"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(830,190)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display12"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(1020,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1920,280)" name="Pin">
+    <comp lib="0" loc="(1920,410)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="final data"/>
+      <a name="label" val="clock output"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(160,430)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="reset"/>
-    </comp>
-    <comp lib="0" loc="(480,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
+    <comp lib="4" loc="(1770,360)" name="Register">
       <a name="width" val="32"/>
-      <a name="label" val="display5"/>
-      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1080,100)" name="Pin">
       <a name="facing" val="south"/>
@@ -577,50 +500,52 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="display17"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1130,190)" name="Pin">
+    <comp lib="0" loc="(1480,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display18"/>
+      <a name="label" val="display25"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(630,190)" name="Pin">
+    <comp lib="0" loc="(1580,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display8"/>
+      <a name="label" val="display27"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(470,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(430,190)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display4"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(1670,360)" name="Register">
+    <comp lib="4" loc="(720,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(1320,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(1520,360)" name="Register">
+    <comp lib="4" loc="(620,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(1170,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(190,270)" name="Pin">
-      <a name="width" val="32"/>
+    <comp lib="0" loc="(160,390)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="start data"/>
+      <a name="label" val="start"/>
+    </comp>
+    <comp lib="0" loc="(1380,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display23"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(270,360)" name="Register">
+    <comp lib="4" loc="(670,360)" name="Register">
       <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(770,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(380,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display3"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1730,190)" name="Pin">
       <a name="facing" val="south"/>
@@ -636,82 +561,42 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="display28"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(670,360)" name="Register">
+    <comp lib="4" loc="(1020,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(780,100)" name="Pin">
+    <comp lib="0" loc="(330,190)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display11"/>
+      <a name="label" val="display2"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1580,100)" name="Pin">
+    <comp lib="0" loc="(480,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display27"/>
+      <a name="label" val="display5"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(970,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="4" loc="(1220,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="4" loc="(620,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(880,100)" name="Pin">
+    <comp lib="0" loc="(1180,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display13"/>
+      <a name="label" val="display19"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1430,190)" name="Pin">
+    <comp lib="0" loc="(1030,190)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display24"/>
+      <a name="label" val="display16"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1480,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display25"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(520,360)" name="Register">
+    <comp lib="4" loc="(570,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(160,390)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="start"/>
-    </comp>
-    <comp lib="0" loc="(380,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
+    <comp lib="4" loc="(1070,360)" name="Register">
       <a name="width" val="32"/>
-      <a name="label" val="display3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1920,410)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="clock output"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="4" loc="(1620,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1330,190)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="display22"/>
-      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1780,100)" name="Pin">
       <a name="facing" val="south"/>
@@ -720,20 +605,93 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="display31"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(1570,360)" name="Register">
+    <comp lib="4" loc="(1820,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(420,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(160,410)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="clock"/>
+    <comp lib="0" loc="(930,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display14"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(1470,360)" name="Register">
+      <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(320,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(570,360)" name="Register">
+    <comp lib="4" loc="(1420,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(870,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(1430,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display24"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(970,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(430,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display4"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1920,430)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="reset output"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(1120,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(630,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display8"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1530,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display26"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(160,430)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="reset"/>
+    </comp>
+    <comp lib="0" loc="(1830,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display32"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(270,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(730,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display10"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(1520,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1230,190)" name="Pin">
@@ -743,21 +701,63 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="display20"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(720,360)" name="Register">
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(680,100)" name="Pin">
+    <comp lib="0" loc="(280,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="display9"/>
+      <a name="label" val="display1"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(1470,360)" name="Register">
+    <comp lib="4" loc="(1720,360)" name="Register">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="4" loc="(1120,360)" name="Register">
+    <comp lib="4" loc="(1220,360)" name="Register">
       <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(820,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(1670,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(1280,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display21"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(530,190)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="display6"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(1270,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(1370,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(1620,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(160,410)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="clock"/>
+    </comp>
+    <comp lib="4" loc="(370,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(470,360)" name="Register">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(190,270)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="start data"/>
+      <a name="labelloc" val="north"/>
     </comp>
   </circuit>
 </project>

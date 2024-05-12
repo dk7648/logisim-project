@@ -20,7 +20,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -30,7 +36,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <main name="bumpCounter"/>
+  <main name="character32"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -63,65 +69,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="bumpCounter">
-    <a name="circuit" val="bumpCounter"/>
+  <circuit name="character32">
+    <a name="circuit" val="character32"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(650,130)" to="(650,330)"/>
-    <wire from="(560,130)" to="(610,130)"/>
-    <wire from="(370,170)" to="(560,170)"/>
-    <wire from="(650,130)" to="(700,130)"/>
-    <wire from="(320,220)" to="(500,220)"/>
-    <wire from="(230,130)" to="(230,330)"/>
-    <wire from="(140,220)" to="(320,220)"/>
-    <wire from="(520,250)" to="(620,250)"/>
-    <wire from="(500,140)" to="(500,220)"/>
-    <wire from="(600,140)" to="(600,220)"/>
-    <wire from="(500,220)" to="(600,220)"/>
-    <wire from="(370,140)" to="(370,170)"/>
-    <wire from="(230,330)" to="(650,330)"/>
-    <wire from="(560,130)" to="(560,170)"/>
-    <wire from="(190,120)" to="(350,120)"/>
-    <wire from="(520,150)" to="(520,250)"/>
-    <wire from="(540,130)" to="(560,130)"/>
-    <wire from="(360,250)" to="(520,250)"/>
-    <wire from="(140,250)" to="(360,250)"/>
-    <wire from="(320,110)" to="(350,110)"/>
-    <wire from="(320,110)" to="(320,220)"/>
-    <wire from="(360,140)" to="(360,250)"/>
-    <wire from="(620,150)" to="(620,250)"/>
-    <wire from="(230,130)" to="(250,130)"/>
-    <wire from="(500,140)" to="(510,140)"/>
-    <wire from="(380,130)" to="(510,130)"/>
-    <wire from="(280,130)" to="(350,130)"/>
-    <wire from="(600,140)" to="(610,140)"/>
-    <wire from="(640,130)" to="(650,130)"/>
-    <comp lib="1" loc="(280,130)" name="NOT Gate"/>
-    <comp lib="0" loc="(140,250)" name="Clock">
-      <a name="label" val="clock"/>
-    </comp>
-    <comp lib="4" loc="(640,130)" name="Register">
-      <a name="width" val="1"/>
-    </comp>
-    <comp lib="0" loc="(190,120)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="delayTime"/>
-    </comp>
-    <comp lib="0" loc="(140,220)" name="Pin">
+    <wire from="(430,120)" to="(490,120)"/>
+    <wire from="(200,120)" to="(290,120)"/>
+    <wire from="(200,190)" to="(340,190)"/>
+    <wire from="(340,160)" to="(340,190)"/>
+    <comp lib="0" loc="(200,190)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="start"/>
     </comp>
-    <comp lib="4" loc="(380,120)" name="Counter"/>
-    <comp lib="0" loc="(700,130)" name="Pin">
+    <comp lib="0" loc="(490,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="width" val="32"/>
       <a name="label" val="output"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="4" loc="(540,130)" name="Register">
-      <a name="width" val="1"/>
+    <comp lib="0" loc="(200,120)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="index_4개씩1세트"/>
+    </comp>
+    <comp lib="4" loc="(430,120)" name="ROM">
+      <a name="addrWidth" val="4"/>
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 4 32
+37 1e 16 3f 27 1e 16 2f
+37 1e 16 2f
+</a>
     </comp>
   </circuit>
 </project>
