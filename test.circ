@@ -100,9 +100,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(880,340)" to="(880,370)"/>
     <wire from="(780,340)" to="(780,370)"/>
     <wire from="(760,340)" to="(760,370)"/>
+    <wire from="(920,420)" to="(920,570)"/>
     <wire from="(240,210)" to="(470,210)"/>
     <wire from="(130,400)" to="(740,400)"/>
     <wire from="(200,160)" to="(200,190)"/>
+    <wire from="(910,420)" to="(910,630)"/>
     <wire from="(140,420)" to="(290,420)"/>
     <wire from="(170,380)" to="(170,490)"/>
     <wire from="(110,400)" to="(130,400)"/>
@@ -112,10 +114,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(560,160)" to="(560,220)"/>
     <wire from="(130,280)" to="(200,280)"/>
     <wire from="(220,190)" to="(290,190)"/>
+    <wire from="(900,420)" to="(900,600)"/>
     <wire from="(130,280)" to="(130,400)"/>
     <wire from="(140,290)" to="(140,420)"/>
     <wire from="(210,190)" to="(210,260)"/>
     <wire from="(270,280)" to="(460,280)"/>
+    <wire from="(730,630)" to="(910,630)"/>
     <wire from="(170,380)" to="(290,380)"/>
     <wire from="(150,300)" to="(200,300)"/>
     <wire from="(290,380)" to="(290,390)"/>
@@ -137,53 +141,33 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(870,340)" to="(870,370)"/>
     <wire from="(770,340)" to="(770,370)"/>
     <wire from="(750,340)" to="(750,370)"/>
+    <wire from="(920,570)" to="(1090,570)"/>
     <wire from="(260,230)" to="(260,260)"/>
     <wire from="(290,160)" to="(290,190)"/>
+    <wire from="(890,420)" to="(890,570)"/>
+    <wire from="(730,600)" to="(900,600)"/>
+    <wire from="(730,540)" to="(880,540)"/>
     <wire from="(150,300)" to="(150,460)"/>
     <wire from="(110,420)" to="(140,420)"/>
     <wire from="(460,280)" to="(460,380)"/>
     <wire from="(230,200)" to="(380,200)"/>
     <wire from="(250,220)" to="(250,260)"/>
+    <wire from="(730,570)" to="(890,570)"/>
     <wire from="(460,380)" to="(740,380)"/>
     <wire from="(120,270)" to="(200,270)"/>
     <wire from="(240,210)" to="(240,260)"/>
     <wire from="(470,160)" to="(470,210)"/>
     <wire from="(200,190)" to="(210,190)"/>
+    <wire from="(880,420)" to="(880,540)"/>
     <wire from="(110,380)" to="(120,380)"/>
     <wire from="(290,410)" to="(740,410)"/>
     <wire from="(290,390)" to="(740,390)"/>
     <wire from="(150,460)" to="(280,460)"/>
     <wire from="(260,230)" to="(650,230)"/>
     <wire from="(230,200)" to="(230,260)"/>
-    <comp lib="7" loc="(1070,380)" name="bumpIncoder32">
-      <a name="label" val="bumpIncoder"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="8" loc="(270,280)" name="pushBump32">
-      <a name="label" val="pushBump"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(200,160)" name="Pin">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(730,570)" name="Constant">
       <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(110,380)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="start"/>
-    </comp>
-    <comp lib="0" loc="(110,420)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="reset"/>
-    </comp>
-    <comp lib="10" loc="(280,480)" name="bumpCounter">
-      <a name="label" val="bumpCounter"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(560,160)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
+      <a name="value" val="0x1e"/>
     </comp>
     <comp lib="0" loc="(380,160)" name="Pin">
       <a name="facing" val="south"/>
@@ -195,27 +179,75 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="5" loc="(750,340)" name="DotMatrix">
-      <a name="matrixcols" val="32"/>
-      <a name="matrixrows" val="32"/>
+    <comp lib="0" loc="(110,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="start"/>
     </comp>
-    <comp lib="0" loc="(110,400)" name="Clock">
-      <a name="label" val="clock"/>
+    <comp lib="8" loc="(270,280)" name="pushBump32">
+      <a name="label" val="pushBump"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="10" loc="(280,480)" name="bumpCounter">
+      <a name="label" val="bumpCounter"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(140,480)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
       <a name="label" val="delayTime"/>
     </comp>
-    <comp lib="0" loc="(650,160)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="32"/>
+    <comp lib="0" loc="(110,420)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="reset"/>
     </comp>
     <comp lib="0" loc="(470,160)" name="Pin">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(730,600)" name="Constant">
+      <a name="width" val="32"/>
+      <a name="value" val="0x16"/>
+    </comp>
+    <comp lib="0" loc="(1090,570)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="isBumped"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(730,630)" name="Constant">
+      <a name="width" val="32"/>
+      <a name="value" val="0x3f"/>
+    </comp>
+    <comp lib="0" loc="(200,160)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(650,160)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="5" loc="(750,340)" name="DotMatrix">
+      <a name="matrixcols" val="32"/>
+      <a name="matrixrows" val="32"/>
+    </comp>
+    <comp lib="0" loc="(730,540)" name="Constant">
+      <a name="width" val="32"/>
+      <a name="value" val="0x37"/>
+    </comp>
+    <comp lib="7" loc="(1070,380)" name="bumpIncoder32">
+      <a name="label" val="bumpIncoder"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(560,160)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(110,400)" name="Clock">
+      <a name="label" val="clock"/>
     </comp>
   </circuit>
 </project>
