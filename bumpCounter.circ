@@ -97,23 +97,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(280,130)" to="(350,130)"/>
     <wire from="(600,140)" to="(610,140)"/>
     <wire from="(640,130)" to="(650,130)"/>
-    <comp lib="1" loc="(280,130)" name="NOT Gate"/>
-    <comp lib="0" loc="(140,250)" name="Clock">
-      <a name="label" val="clock"/>
-    </comp>
-    <comp lib="4" loc="(640,130)" name="Register">
-      <a name="width" val="1"/>
-    </comp>
     <comp lib="0" loc="(190,120)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
       <a name="label" val="delayTime"/>
     </comp>
-    <comp lib="0" loc="(140,220)" name="Pin">
+    <comp lib="1" loc="(280,130)" name="NOT Gate"/>
+    <comp lib="0" loc="(140,250)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="start"/>
+      <a name="label" val="clock"/>
     </comp>
-    <comp lib="4" loc="(380,120)" name="Counter"/>
     <comp lib="0" loc="(700,130)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -121,6 +114,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="4" loc="(540,130)" name="Register">
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="4" loc="(380,120)" name="Counter"/>
+    <comp lib="0" loc="(140,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="start"/>
+    </comp>
+    <comp lib="4" loc="(640,130)" name="Register">
       <a name="width" val="1"/>
     </comp>
   </circuit>
