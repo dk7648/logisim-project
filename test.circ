@@ -78,8 +78,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(200,60)" to="(200,190)"/>
     <wire from="(220,190)" to="(220,260)"/>
     <wire from="(140,290)" to="(200,290)"/>
+    <wire from="(380,60)" to="(380,200)"/>
     <wire from="(120,380)" to="(170,380)"/>
     <wire from="(290,410)" to="(290,420)"/>
     <wire from="(1060,340)" to="(1060,370)"/>
@@ -102,15 +104,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(760,340)" to="(760,370)"/>
     <wire from="(920,420)" to="(920,570)"/>
     <wire from="(240,210)" to="(470,210)"/>
-    <wire from="(200,160)" to="(200,190)"/>
     <wire from="(910,420)" to="(910,630)"/>
     <wire from="(170,380)" to="(170,480)"/>
     <wire from="(140,420)" to="(290,420)"/>
+    <wire from="(560,60)" to="(560,220)"/>
     <wire from="(110,400)" to="(130,400)"/>
-    <wire from="(380,160)" to="(380,200)"/>
     <wire from="(120,270)" to="(120,380)"/>
     <wire from="(280,480)" to="(290,480)"/>
-    <wire from="(560,160)" to="(560,220)"/>
     <wire from="(150,460)" to="(290,460)"/>
     <wire from="(130,280)" to="(200,280)"/>
     <wire from="(180,490)" to="(250,490)"/>
@@ -120,6 +120,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(140,290)" to="(140,420)"/>
     <wire from="(210,190)" to="(210,260)"/>
     <wire from="(270,280)" to="(460,280)"/>
+    <wire from="(290,60)" to="(290,190)"/>
     <wire from="(730,630)" to="(910,630)"/>
     <wire from="(170,380)" to="(290,380)"/>
     <wire from="(150,300)" to="(200,300)"/>
@@ -134,6 +135,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1010,340)" to="(1010,370)"/>
     <wire from="(990,340)" to="(990,370)"/>
     <wire from="(1030,340)" to="(1030,370)"/>
+    <wire from="(470,60)" to="(470,210)"/>
     <wire from="(810,340)" to="(810,370)"/>
     <wire from="(790,340)" to="(790,370)"/>
     <wire from="(830,340)" to="(830,370)"/>
@@ -147,7 +149,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(920,570)" to="(1090,570)"/>
     <wire from="(180,400)" to="(180,490)"/>
     <wire from="(260,230)" to="(260,260)"/>
-    <wire from="(290,160)" to="(290,190)"/>
     <wire from="(890,420)" to="(890,570)"/>
     <wire from="(730,600)" to="(900,600)"/>
     <wire from="(730,540)" to="(880,540)"/>
@@ -161,7 +162,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(120,270)" to="(200,270)"/>
     <wire from="(240,210)" to="(240,260)"/>
     <wire from="(170,480)" to="(250,480)"/>
-    <wire from="(470,160)" to="(470,210)"/>
     <wire from="(200,190)" to="(210,190)"/>
     <wire from="(880,420)" to="(880,540)"/>
     <wire from="(110,380)" to="(120,380)"/>
@@ -180,7 +180,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(730,540)" name="Constant">
       <a name="width" val="32"/>
-      <a name="value" val="0x37"/>
+      <a name="value" val="0x6e"/>
     </comp>
     <comp lib="0" loc="(110,380)" name="Pin">
       <a name="tristate" val="false"/>
@@ -194,17 +194,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="bumpIncoder"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(200,160)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="0" loc="(110,400)" name="Clock">
       <a name="label" val="clock"/>
     </comp>
     <comp lib="0" loc="(730,600)" name="Constant">
       <a name="width" val="32"/>
-      <a name="value" val="0x16"/>
+      <a name="value" val="0x2c"/>
     </comp>
     <comp lib="0" loc="(1090,570)" name="Pin">
       <a name="facing" val="west"/>
@@ -217,7 +212,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="delayTime"/>
     </comp>
+    <comp lib="0" loc="(200,60)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(730,570)" name="Constant">
+      <a name="width" val="32"/>
+      <a name="value" val="0x3c"/>
+    </comp>
+    <comp lib="0" loc="(380,60)" name="Constant">
+      <a name="facing" val="south"/>
       <a name="width" val="32"/>
       <a name="value" val="0x1e"/>
     </comp>
@@ -225,33 +229,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="bumpCounter"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(470,160)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="5" loc="(750,340)" name="DotMatrix">
       <a name="matrixcols" val="32"/>
       <a name="matrixrows" val="32"/>
     </comp>
-    <comp lib="0" loc="(560,160)" name="Pin">
+    <comp lib="0" loc="(290,60)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
+      <a name="value" val="0x28"/>
     </comp>
     <comp lib="0" loc="(730,630)" name="Constant">
       <a name="width" val="32"/>
-      <a name="value" val="0x3f"/>
+      <a name="value" val="0x7e"/>
     </comp>
-    <comp lib="0" loc="(380,160)" name="Pin">
+    <comp lib="0" loc="(560,60)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
+      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(290,160)" name="Pin">
+    <comp lib="0" loc="(470,60)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
+      <a name="value" val="0x30"/>
     </comp>
   </circuit>
 </project>
